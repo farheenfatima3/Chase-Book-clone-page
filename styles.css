@@ -2,12 +2,18 @@
     margin:0;
    
 }
+
+a{
+    text-decoration: none;
+    color:black;
+}
 .header{
     padding:15px 20px;
     display:flex;
     justify-content: space-between;
-    position:sticky;
+    position:relative;
     top:0;
+    margin:0;
     background-color: white;
     z-index: 100;
     box-shadow:0 5px 8px -9px rgba(0,0,0,0.75);
@@ -202,6 +208,11 @@ margin:10px;
     font-size: medium;
     margin-left:10px;
 }
+.image-upload-wrap input{
+    width:55px;
+    border:none;
+    margin-right:5px;
+}
 .messageSender_option:hover{
     background-color:#eff2f5;
     cursor:pointer;
@@ -211,12 +222,13 @@ margin:10px;
 .post{
     width:100%;
     margin-top:15px;
-    /* border-radius:15px; */
     background-color: white;
     box-shadow:0px 5px 7px -7px rgba(0,0,0,0.75);
 }
+
 .post_image img{
    width:100%;
+
 }
 .post_top{
     display:flex;
@@ -254,15 +266,68 @@ font-size: medium;
     align-items:center;
     justify-content: center;
     padding:5px;
-    flex:1;
+    flex:1;  
 }
 .post_option p{
     margin-left:10px;
 }
-.post_option:hover{
-    background-color: #eff2f5;
-    border-radius:10px;
+
+.post_option button{
+    border:none;
+    outline-width: 0;
+    border-radius:999px;
+    padding:10px 20px;
+    background-color: white;
+    color:gray;
 }
+.post_option button:hover{
+    cursor:pointer;
+}
+/* comment sending */
+.two-cmnt{
+display:flex;
+flex-direction: column;
+flex:1;
+}
+.show-cmnt{
+    display:flex;
+    align-items:center;
+    padding:15px;
+    border-bottom:1px solid #eff2f5;
+}
+.show-cmnt form{
+    display:flex;
+    flex:1;
+}
+.show-cmnt form input{
+    flex:1;
+    outline-width:0;
+    border:none;
+    padding:10px 20px;
+    margin:0px 10px;
+    background-color: #eff2f5;
+    border-radius:999px;
+}
+.styleC textarea{
+    background-color: #eff2f5;
+    border:none;
+    height:4vh;
+    margin:20px 10px;
+    border-radius:999px;
+    outline-width:0;
+}
+.flexCmnt{
+    display:flex;
+    align-items: center;
+    padding:15px;
+    border-bottom:1px solid #eff2f5;
+}
+.post_btn{
+    border:none;
+    border-radius:999px;
+    padding:10px 20px;
+}
+
 @media(max-width:768px){
     .sideRow{
         display:none;
