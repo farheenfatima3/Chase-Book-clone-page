@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+}
 *{
     margin:0;
-   
+}
+:root{
+    --colorOne:#8B5CF6;
+    --colorTwo:#eff2f5;
+    --colorThree:#eff6f9;
+    --colorFour:#9CA3AF;
+    --colorFive:#D1D5DB;
 }
 
 a{
@@ -31,7 +41,7 @@ a{
 .header_input{
     display:flex;
     align-items: center; 
-    background-color: #eff2f5;
+    background-color: var(--colorTwo);
     padding:0.5rem;
     margin-left:10px; 
     border-radius: 999px;
@@ -61,12 +71,12 @@ a{
     padding:0 30px;
 }
 .header-option.active{
-    color:blue;
-    border-bottom: 3px solid blue;
+    color:var(--colorOne);
+    border-bottom: 3px solid var(--colorOne);
 }
 .header-option:hover{
-    color:blue;
-    background-color: #eff2f5;
+    color:var(--colorOne);
+    background-color: var(--colorTwo);
     border-radius: 10px;
     padding:25px;
     border-bottom:none;
@@ -100,7 +110,7 @@ a{
 }
 
 .sidebarRow:hover{
-    background-color: gray;
+    background-color: var(--colorFour);
     border-radius: 10px;
 }
 .sidebarRow h4{
@@ -109,7 +119,7 @@ a{
 }
 .sidebarRow .material-icons{
     font-size:xx-large;
-    color:blue;
+    color:var(--colorOne);
 }
 /* sidebar styling ends */
 
@@ -172,7 +182,7 @@ margin:10px;
 .messageSender_top{
     display:flex;
     align-items: center;
-    border-bottom:1px solid #eff2f5;
+    border-bottom:1px solid var(--colorTwo);
     padding:15px;
 }
 .messageSender_top form{
@@ -185,11 +195,11 @@ margin:10px;
     border:none;
     padding:10px 20px;
     margin:0 10px;
-    background-color: #eff2f5;
+    background-color: var(--colorTwo);
     border-radius:999px;
 }
 .messageSender_top form input:hover{
-    background-color: #eff6f9;
+    background-color: var(--colorThree);
     cursor:pointer;
     border-radius:20px;
 
@@ -201,7 +211,7 @@ margin:10px;
 .messageSender_option{
     display:flex;
     align-items: center;
-    color:gray;
+    color:var(--colorFour);
     margin:5px;
 }
 .messageSender_option p{
@@ -214,7 +224,7 @@ margin:10px;
     margin-right:5px;
 }
 .messageSender_option:hover{
-    background-color:#eff2f5;
+    background-color:var(--colorTwo);
     cursor:pointer;
     border-radius:20px;
 }
@@ -244,7 +254,7 @@ font-size: medium;
 }
 .post_topInfo p{
     font-size:small;
-    color:gray;
+    color:var(--colorFour);
 }
 .post_bottom{
     margin-top: 10px;
@@ -253,11 +263,11 @@ font-size: medium;
 }
 .post_options{
     padding-top:10px;
-    border-top:1px solid lightgray;
+    border-top:1px solid var(--colorFive);
     display:flex;
     justify-content: space-evenly;
     font-size:medium;
-    color:gray;
+    color:var(--colorFour);
     cursor:pointer;
     padding:15px;
 }
@@ -278,7 +288,7 @@ font-size: medium;
     border-radius:999px;
     padding:10px 20px;
     background-color: white;
-    color:gray;
+    color:var(--colorFour);
 }
 .post_option button:hover{
     cursor:pointer;
@@ -293,7 +303,7 @@ flex:1;
     display:flex;
     align-items:center;
     padding:15px;
-    border-bottom:1px solid #eff2f5;
+    border-bottom:1px solid var(--colorTwo);
 }
 .show-cmnt form{
     display:flex;
@@ -305,11 +315,11 @@ flex:1;
     border:none;
     padding:10px 20px;
     margin:0px 10px;
-    background-color: #eff2f5;
+    background-color: var(--colorTwo);
     border-radius:999px;
 }
 .styleC textarea{
-    background-color: #eff2f5;
+    background-color: var(--colorTwo);
     border:none;
     height:4vh;
     margin:20px 10px;
@@ -320,7 +330,7 @@ flex:1;
     display:flex;
     align-items: center;
     padding:15px;
-    border-bottom:1px solid #eff2f5;
+    border-bottom:1px solid var(--colorTwo);
 }
 .post_btn{
     border:none;

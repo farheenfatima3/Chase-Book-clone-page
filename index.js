@@ -14,7 +14,7 @@ const userCommnetBtnOne=document.querySelector(".comment-btnOne")
 const userCommentInputOne=document.querySelector(".input-commentOne")
 const showCommentOne=document.querySelector(".show-commentOne")
 const hideOne=document.querySelector(".hideCommentOne")
-const inputPhoto=document.querySelector('input[type="file')
+const inputPhoto=document.querySelector('input[type="file"]')
 const uploadImage=document.querySelector("#photo-U")
 const hideMain=document.querySelector(".uploadHide")
 const fileLike=document.querySelector(".like-two-btn")
@@ -98,18 +98,22 @@ function commentFunTwo(){
     }
 }
 
+
 // photo upload
 hideMain.style.display="none"
 inputPhoto.addEventListener("change",upload,false)
 function upload(){
+    // file reader api
     const reader=new FileReader()
     reader.onload=function(){
         const img=new Image();
         img.src=reader.result;
+        console.log(reader.result)
         hideMain.style.display="block"
         uploadImage.appendChild(img);
     }
-   const storeImg=reader.readAsDataURL(inputPhoto.files[0])
+    // readAsDataURL is going to base 64 encode the file as image representation
+    // inputPhoto.files will get the file of selected image as object
+   reader.readAsDataURL(inputPhoto.files[0])
 }
-
 
